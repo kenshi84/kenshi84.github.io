@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>A Sketch-based Interface for Modeling Myocardial Fiber Orientation that Considers the Layered Structure of the Ventricles</title>
+    <link rel="stylesheet" href="../common.css">
+    <script type="text/javascript" src="../common.js"></script>
+</head>
+<body onload="init();">
+    <h1>A Sketch-based Interface for Modeling Myocardial Fiber Orientation that Considers the Layered Structure of the Ventricles</h1>
+    <div class="venue"><a target="_blank" href="http://jps.physiology.jp/">The Journal of Physiological Sciences</a> (2008)</div>
+    <div class="author">
+        Kenshi Takayama,
+        <a target="_blank" href="http://square.umin.ac.jp/ash/">Takashi Ashihara</a>,
+        <a target="_blank" href="http://takashiijiri.com/index.html">Takashi Ijiri</a>,
+        <a target="_blank" href="http://www-ui.is.s.u-tokyo.ac.jp/~takeo/">Takeo Igarashi</a>,
+        <a target="_blank" href="https://www.researchgate.net/profile/Ryo_Haraguchi">Ryo Haraguchi</a>, and
+        <a target="_blank" href="https://researchmap.jp/k_nakazawa/">Kazuo Nakazawa</a>
+    </div>
+    <figure>
+        <img src="sketch-layered-myocardium-teaser.jpg" />
+    </figure>
+    <section>
+        <h2>Abstract</h2>
+        <p>
+            We propose a sketch-based interface for modeling the myocardial fiber orientation required in the electrophysiological simulation of the heart, especially the ventricles. The user can create a volumetric vector field that represents the myocardial fiber orientation in two steps. First, the user defines a depth field over the three-dimensional (3D) ventricular model to create layers of myocardium. Then, the user can peel these layers and draw strokes on them to specify the myocardial fiber orientation in each layer. We represent the 3D ventricular model as a tetrahedral mesh and perform Laplacian smoothing over the mesh vertices to interpolate the vector field defined by the user-drawn strokes. Our method also allows the user to perform deformations on volumetric models of myocardial fiber orientation, which is very important for studying heart disease associated with morphological abnormalities. We created several examples of myocardial fiber orientation and applied them to a simplified simulator to demonstrate the effectiveness of our method.
+        </p>
+    </section>
+    <div class="material">
+        <a href="sketch-layered-myocardium-jps2008.pdf">Paper (author's copy)</a> -
+        <a target="_blank" href="http://dx.doi.org/10.2170/physiolsci.RP008108">Paper (official)</a> -
+        <a href="../bibliography_bib.html#TAII*08">BibTeX</a> -
+        <a href="sketch-layered-myocardium.avi">Video</a> -
+        <a href="sketch-layered-myocardium.zip">Code</a>
+    </div>
+    <figure>
+        <iframe width="640" height="480" src="http://www.youtube.com/embed/u_xlgpO-Pnk?rel=0" frameborder="0" allowfullscreen></iframe>
+    </figure>
+    <section>
+        <h2>Acknowledgements</h2>
+        <p>
+            The  first  author  was  funded  by  the  Information-technology
+            Promotion Agency  (IPA). This study was partially  funded by
+            the Ministry of Education, Culture, Sports, Science and Technology (Japan), a Grant-in-Aid for Scientific Research (B) 18300157, 
+            and the Leading Project for Biosimulation.
+        </p>
+    </section>
+    <footer id="footer"></footer>
+</body>
+</html>

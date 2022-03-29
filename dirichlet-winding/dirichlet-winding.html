@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Consistently Orienting Facets in Polygon Meshes by Minimizing the Dirichlet Energy of Generalized Winding Numbers</title>
+    <link rel="stylesheet" href="../common.css">
+    <script type="text/javascript" src="../common.js"></script>
+</head>
+<body onload="init();">
+    <h1>Consistently Orienting Facets in Polygon Meshes by Minimizing the Dirichlet Energy of Generalized Winding Numbers</h1>
+    <div class="venue"><a target="_blank" href="http://e-collection.library.ethz.ch/view/eth:8710">Technical report, ETH Zurich</a> (2014)</div>
+    <div class="author">
+        Kenshi Takayama,
+        <a target="_blank" href="http://www.cs.toronto.edu/~jacobson/">Alec Jacobson</a>,
+        <a target="_blank" href="https://www.cs.utah.edu/~ladislav/">Ladislav Kavan</a>, and
+        <a target="_blank" href="http://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a>
+    </div>
+    <section>
+        <h2>Abstract</h2>
+        <p>
+            Jacobson et al. [JKSH13] hypothesized that the local coherency of the generalized winding number
+            function could be used to correctly determine consistent facet orientations in polygon meshes. We report
+            on an approach to consistently orienting facets in polygon meshes by minimizing the Dirichlet energy of
+            generalized winding numbers. While the energy can be concisely formulated and efficiently computed, we
+            found that this approach is fundamentally flawed and is unfortunately not applicable for most handmade
+            meshes shared on popular mesh repositories such as Google 3D Warehouse.
+        </p>
+    </section>
+    <div class="material">
+        <a href="dirichlet-winding-techreport2014.pdf">Paper</a> -
+        <a href="../bibliography_bib.html#TJKS14">BibTeX</a> -
+        <a href="dirichlet-winding.zip">Code</a>
+    </div>
+    <section>
+        <h2>Acknowledgments</h2>
+        <p>
+            We are grateful to Peter Kaufmann, Wenzel Jakob, Nobuyuki Umetani, Melina Skouras, Ilya Baran, and
+            Ryan Schmidt for their advice and feedback. This work was supported in part by the ERC grant iModel
+            (StG-2012-306877), by an SNF award 200021_137879, by an NSF grant IIS-1350330 and by a gift from Adobe
+            Research. Kenshi Takayama's work was funded by JSPS Postdoctoral Fellowships for Research Abroad. Alec
+            Jacobson's work was supported by an Intel Doctoral Fellowship.
+        </p>
+    </section>
+    <footer id="footer"></footer>
+</body>
+</html>

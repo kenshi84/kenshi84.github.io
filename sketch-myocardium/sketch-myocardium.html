@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>A Sketch-Based Interface for Modeling Myocardial Fiber Orientation</title>
+    <link rel="stylesheet" href="../common.css">
+    <script type="text/javascript" src="../common.js"></script>
+</head>
+<body onload="init()">
+    <header id="header"></header>
+    <h1 class="en">A Sketch-Based Interface for Modeling Myocardial Fiber Orientation</h1>
+    <h1 class="ja">心筋線維走向モデリングのためのスケッチインタフェース</h1>
+    <div class="venue">
+        <div><a target="_blank" href="http://www.smartgraphics.org/sg07/">Smart Graphics 2007</a></div>
+        <div class="ja"><a target="_blank" href="http://www.pluto.ai.kyutech.ac.jp/vc2007/">VC/GCAD 合同シンポジウム 2007</a></div>
+    </div>
+    <div class="author">
+        Kenshi Takayama,
+        <a target="_blank" href="http://www-ui.is.s.u-tokyo.ac.jp/~takeo/">Takeo Igarashi</a>,
+        <a target="_blank" href="https://www.researchgate.net/profile/Ryo_Haraguchi">Ryo Haraguchi</a>, and
+        <a target="_blank" href="https://researchmap.jp/k_nakazawa/">Kazuo Nakazawa</a>
+    </div>
+    <figure>
+        <img src="sketch-myocardium-teaser.jpg" />
+        <figcaption>
+            <div class="en">
+                Designing fiber orientations by sketching.
+                (a) Drawing a stroke on the surface to specify the orientations on the surface.
+                (b) Cutting the model to see the orientations inside the model.
+                (c) Drawing a stroke on the cross-section surface to further control the orientation inside the model.
+            </div>
+            <div class="ja">
+                プロトタイプシステムのスナップショット: (a)表面上にストロークを描く, (b)断面の生成, (c)断面上にストロークを描く
+            </div>
+        </figcaption>
+    </figure>
+    <section class="en">
+        <h2>Abstract</h2>
+        <p>
+            This paper proposes a sketch-based interface for modeling muscle fiber orientation of a 3D virtual heart model. Our current target is electrophysiological simulation of heart and fiber orientation is one of the key elements to obtain faithful simulation results. The interface and algorithm are designed based on the observation that fiber orientation is always parallel to the heart surface. The user specifies the fiber orientation on the surface by drawing a freeform stroke on the object surface. The system first builds a vector field on the surface by applying Laplacian smoothing to the mesh vertices and then builds volumetric vector field by applying Laplacian smoothing to the voxels. The usefulness of the proposed method is demonstrated through a user study with a doctor in that area.
+        </p>
+    </section>
+    <section class="ja">
+        <h2>概要</h2>
+        <p>
+            本稿では，心臓電気生理シミュレーションにおいて重要な要素である心筋線維走向データをモデリングするためのスケッチインタフェースを提案する．提案手法は心筋線維走向が心臓表面において常にその接面に沿うという観察に基づいており，ユーザは心臓表面にストロークを描くことで心臓内部全体を満たす線維走向データを直感的に作成することができる．システムはユーザの入力を基に表面のメッシュ上と内部のボクセル上の 2 段階で Laplacian smoothing を行い，心臓内部全体の筋線維走向を計算する．一人の医師を対象に初期段階のユーザスタディを行い，本手法の有用性および課題を確認した．
+        </p>
+    </section>
+    <div class="material">
+        <a href="sketch-myocardium-smartgraphics2007.pdf">Paper (author's copy)</a> -
+        <a target="_blank" href="http://dx.doi.org/10.1007/978-3-540-73214-3_1">Paper (official)</a> -
+        <a href="bibliography_bib.html#TIHN07">BibTeX</a> -
+        <a href="sketch-myocardium.wmv">Video</a> -
+        <a href="sketch-myocardium.pptx">Slides</a> -
+        <a href="sketch-myocardium.zip">Code</a>
+        <span class="ja">
+            - <a href="sketch-myocardium/sketch-myocardium-vc2007.pdf">日本語論文</a>
+        </span>
+    </div>
+    <figure>
+        <iframe width="640" height="480" src="http://www.youtube.com/embed/79cy9mfxaEY?rel=0" frameborder="0" allowfullscreen></iframe>
+    </figure>
+    <section>
+        <h2>Acknowledgements</h2>
+        <p>
+            We thank Dr. Takashi Ashihara for his cooperation in our user study and his
+            valuable feedback.
+        </p>
+    </section>
+    <footer id="footer"></footer>
+</body>
+</html>

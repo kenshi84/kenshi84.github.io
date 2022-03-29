@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Lapped Solid Textures: Filling a Model with Anisotropic Textures</title>
+    <link rel="stylesheet" href="../common.css">
+    <script type="text/javascript" src="../common.js"></script>
+</head>
+<body onload="init()">
+    <header id="header"></header>
+    <h1 class="en">Lapped Solid Textures: Filling a Model with Anisotropic Textures</h1>
+    <h1 class="ja">異方性ソリッドテクスチャを用いた中身を持つ3次元物体のモデリング</h1>
+    <div class="venue">
+        <div><a target="_blank" href="http://www.siggraph.org/s2008/">SIGGRAPH 2008</a></div>
+        <div class="ja"><a target="_blank" href="http://www.pluto.ai.kyutech.ac.jp/vc2008/">VC/GCAD 合同シンポジウム 2008</a> (招待講演)</div>
+    </div>
+    <div class="author">
+        Kenshi Takayama,
+        <a target="_blank" href="http://makotookabe.com/">Makoto Okabe</a>,
+        <a target="_blank" href="http://takashiijiri.com/index.html">Takashi Ijiri</a>, and
+        <a target="_blank" href="http://www-ui.is.s.u-tokyo.ac.jp/~takeo/">Takeo Igarashi</a>
+    </div>
+    <figure>
+        <img src="lapped-solid-textures-teaser.jpg" />
+        <figcaption>
+            Models filled with overlapping solid textures: (a) kiwi fruit, (b) carrot, and (c) tree (the grayscale texture represents the displacement map channel).
+            Note that the input solid textures include surface textures as well as interior textures.
+        </figcaption>
+    </figure>
+    <section class="en">
+        <h2>Abstract</h2>
+        <p>
+            We present a method for representing solid objects with spatially-varying oriented textures by repeatedly pasting solid texture exemplars. The underlying concept is to extend the 2D texture patch-pasting approach of lapped textures to 3D solids using a tetrahedral mesh and 3D texture patches. The system places texture patches according to the user-defined volumetric tensor fields over the mesh to represent oriented textures. We have also extended the original technique to handle nonhomogeneous textures for creating solid models whose textural patterns change gradually along the depth fields. We identify several texture types considering the amount of anisotropy and spatial variation and provide a tailored user interface for each. With our simple framework, large-scale realistic solid models can be created easily with little memory and computational cost. We demonstrate the effectiveness of our approach with several examples including trees, fruits, and vegetables.
+        </p>
+    </section>
+    <section class="ja">
+        <h2>概要</h2>
+        <p>
+            サイズの小さな3次元テクスチャをサンプルとして3次元形状内に繰り返し貼り付けることで，中身の詰まったサイズの大きな3次元モデルを作成する手法を提案する．基本的なアイディアは，既存のサーフェス上でのパッチベースのアルゴリズムを，2次元テクスチャを3次元ソリッドテクスチャに，三角形メッシュを四面体メッシュにそれぞれ置き換えることで3次元版に拡張するというものであり，これにより少ない計算コストと記憶容量でサイズの大きな中身の詰まった 3次元モデルを作成することができる．また本手法では，異方性のあるテクスチャを3次元テンソル場に沿って並べたり，空間的遷移のあるテクスチャをモデル内に定義されたデプス場に合わせて並べたりすることができる．本手法を用いることで，果物・野菜・樹木などの中身の詰まった様々な物体を簡単に作成することができる．
+        </p>
+    </section>
+    <div class="material">
+        <a href="lapped-solid-textures-siggraph2008.pdf">Paper (author's copy)</a> -
+        <a target="_blank" href="http://dx.doi.org/10.1145/1360612.1360652">Paper (official)</a> -
+        <a href="../bibliography_bib.html#TOII08">BibTeX</a> -
+        <a href="lapped-solid-textures.mp4">Video</a> -
+        <a href="lapped-solid-textures.ppt">Slides</a> -
+        <a href="lapped-solid-textures.zip">Code</a>
+        <span class="ja">
+            - <a href="lapped-solid-textures-vc2008.pdf">日本語概要</a>
+        </span>
+    </div>
+    <figure>
+        <iframe width="640" height="480" src="http://www.youtube.com/embed/ZCLe2MF61a8?rel=0" frameborder="0" allowfullscreen></iframe>
+    </figure>
+    <section>
+        <h2>Acknowledgements</h2>
+        <p>
+            We thank Shigeru Owada and Kazuo Nakazawa for their valuable comments and advice. We also appreciate the anonymous reviewers' various helpful suggestions for improving the paper. 
+            The first author was funded by the Information-technology Promotion Agency (IPA), Japan.
+        </p>
+    </section>
+    <footer id="footer"></footer>
+</body>
+</html>
