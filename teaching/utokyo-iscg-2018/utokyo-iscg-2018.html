@@ -1,0 +1,225 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../common.css" />
+    <script type="text/javascript" src="../../common.js"></script>
+    <title>2018年度 コンピュータグラフィクス論 / Introduction to Computer Graphics 2018</title>
+</head>
+<body onload="init()">
+<header id="header"></header>
+<h1 class="ja">2018年度 東京大学理学部 コンピュータグラフィクス論</h1>
+<ul class="ja">
+   <li>科目番号： 0510029</li>
+   <li>日時： 木曜2限 (10:25～12:10)</li>
+   <li>場所： 理学部7号館214</li>
+</ul>
+<h1 class="en">Introduction to Computer Graphics 2018 (School of Science, Univ. Tokyo)</h1>
+<ul class="en">
+   <li>Course code: 0510029</li>
+   <li>Time： Thursdays, 10:25--12:10</li>
+   <li>Location: Science bldg. 7, room 214</li>
+</ul>
+<h2 class="ja">担当教員</h2>
+<ul class="ja">
+    <li><a target="_blank" href="http://research.nii.ac.jp/~takayama/">高山 健志</a></li>
+    <ul>
+        <li>国立情報学研究所 助教</li>
+        <li>Email: takayama [at] nii.ac.jp</li>
+    </ul>
+    <li><a target="_blank" href="http://www.ci.i.u-tokyo.ac.jp/~hachisuka/">蜂須賀 恵也</a></li>
+    <ul>
+        <li>創造情報学専攻 准教授</li>
+        <li>Email: thachisuka [at] siggraph.org</li>
+    </ul>
+    <li><a target="_blank" href="http://research.nii.ac.jp/~rand/index_ja.html">安東 遼一</a></li>
+    <ul>
+        <li>国立情報学研究所 助教</li>
+        <li>Email: rand [at] nii.ac.jp</li>
+    </ul>
+</ul>
+<h2 class="en">Lecturers</h2>
+<ul class="en">
+    <li><a target="_blank" href="http://research.nii.ac.jp/~takayama/">Kenshi Takayama</a></li>
+    <ul>
+        <li>Assistant Professor, National Institute of Informatics</li>
+        <li>Email: takayama [at] nii.ac.jp</li>
+    </ul>
+    <li><a target="_blank" href="http://www.ci.i.u-tokyo.ac.jp/~hachisuka/">Toshiya Hachisuka</a></li>
+    <ul>
+        <li>Associate Professor, Dept. of Creative Informatics, The University of Tokyo</li>
+        <li>Email: thachisuka [at] siggraph.org</li>
+    </ul>
+    <li><a target="_blank" href="http://research.nii.ac.jp/~rand/">Ryoichi Ando</a></li>
+    <ul>
+        <li>Assistant Professor, National Institute of Informatics</li>
+        <li>Email: rand [at] nii.ac.jp</li>
+    </ul>
+</ul>
+<h2>TA</h2>
+<ul class="ja">
+    <li><a target="_blank" href="https://sites.google.com/site/seungtaknoh/home">盧 承鐸 (ノ スンタク)</a></li>
+    <ul>
+        <li>五十嵐研 博士課程</li>
+        <li>Email: noh [at] ui.is.s.u-tokyo.ac.jp</li>
+    </ul>
+</ul>
+<ul class="en">
+    <li><a target="_blank" href="https://sites.google.com/site/seungtaknoh/home">Seung-Tak Noh</a></li>
+    <ul>
+        <li>Ph.D. student, Igarashi Lab</li>
+        <li>Email: noh [at] ui.is.s.u-tokyo.ac.jp</li>
+    </ul>
+</ul>
+
+<h2 class="ja">参考情報</h2>
+<h2 class="en">References</h2>
+<ul>
+    <li class="ja">CG一般</li>
+    <li class="en">CG in general</li>
+    <ul>
+        <li class="ja">コンピュータグラフィックス　改訂新版 (CGーARTS協会, ISBN:9784903474496)</li>
+        <li class="ja">ディジタル画像処理　改訂新版 (CGーARTS協会, ISBN:9784903474502)</li>
+        <li class="ja">Computer Graphics Gems JP 2012 (ボーンデジタル, ISBN:9784862461858)</li>
+        <li class="ja">Computer Graphics Gems JP 2013/2014 (ボーンデジタル, ISBN:9784862462190)</li>
+        <li class="ja">Computer Graphics Gems JP 2015 (ボーンデジタル, ISBN:9784862462923)</li>
+        <li>Fundamentals of Computer Graphics (A K Peters/CRC Press, ISBN:9781568814698)</li>
+        <li>Computer Graphics: Principles and Practice in C (Addison-Wesley Professional, ISBN:9780201848403)</li>
+    </ul>
+    <li>OpenGL</li>
+    <ul>
+        <li class="ja"><a href="http://wisdom.sakura.ne.jp/system/opengl/">OpenGL入門</a></li>
+        <li class="ja"><a href="http://marina.sys.wakayama-u.ac.jp/~tokoi/oglarticles.html">和歌山大学 床井研究室</a></li>
+        <li><a href="http://www.opengl.org/sdk/docs/man/html/indexflat.php">Spec</a></li>
+    </ul>
+    <li>JavaScript/WebGL/HTML5</li>
+    <ul>
+        <li><a href="http://learningwebgl.com/blog/?p=11">Learning WebGL</a></li>
+        <li><a href="https://www.khronos.org/registry/webgl/specs/1.0/#5.14">WebGL spec</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web">Mozilla Developer Network</a></li>
+        <li><a href="http://casual-effects.blogspot.jp/2014/01/">An Introduction to JavaScript for Sophisticated Programmers</a></li>
+        <li><a href="http://effectivejs.com/">Effective JavaScript</a> (Addison-Wesley Professional, ISBN:9780321812186)</li>
+    </ul>
+    <li>3D Repositories</li>
+    <ul>
+        <li><a href="http://www.turbosquid.com/">TurboSquid</a></li>
+        <li><a href="https://3dwarehouse.sketchup.com/">3D Warehouse</a></li>
+        <li><a href="http://www.shapeways.com/">Shapeways</a></li>
+        <li><a href="http://www.123dapp.com/Gallery/">Autodesk 123D</a></li>
+        <li><a href="https://graphics.stanford.edu/data/3Dscanrep/">The Stanford 3D Scanning Repository</a></li>
+        <li><a href="http://visionair.ge.imati.cnr.it/ontologies/shapes/">AIM@SHAPE</a></li>
+    </ul>
+</ul>
+
+<h2 class="ja">講義資料</h2>
+<h2 class="en">Slides</h2>
+
+<p class="ja"><span class="emph">無断再配布禁止</span></p>
+<p class="en"><span class="emph">Do not redistribute slides without permission</span></p>
+
+<!-- <ul class="ja"> -->
+<ul>
+<li>4月 5日: <a href="./slides/iscg-2018-intro.pdf">イントロダクション</a></li>
+<li>4月19日: <a href="./slides/iscg-2018-modeling1.pdf">モデリング (1)</a></li>
+<li>4月26日: <a href="./slides/iscg-2018-modeling2.pdf">モデリング (2)</a></li>
+<li>5月10日: <a href="./slides/iscg-2018-modeling3.pdf">モデリング (3)</a></li>
+<li>5月17日: 休講</li>
+<li>5月24日: <a href="./slides/iscg-2018-animation1.pdf">アニメーション (1)</a></li>
+<li>5月31日: <a href="./slides/iscg-2018-animation2.pdf">アニメーション (2)</a></li>
+<li>6月 7日: <a href="./slides/iscg-2018-animation3.pdf">アニメーション (3)</a></li>
+<li>6月14日: <a href="./slides/iscg-2018-rendering1.pdf">レンダリング (1)</a></li>
+<li>6月21日: <a href="./slides/iscg-2018-rendering2.pdf">レンダリング (2)</a></li>
+<li>6月28日: <a href="./slides/iscg-2018-rendering3.pdf">レンダリング (3)</a></li>
+<li>7月 5日: 休講</li>
+<li>7月12日: <a href="./slides/iscg-2018-image1.pdf">画像処理 (1)</a></li>
+<li>7月19日: <a href="./slides/iscg-2018-image2.pdf">画像処理 (2)</a></li>
+</ul>
+
+<!-- <ul class="en">
+<li>Apr  6: <a href="./slides/iscg-2018-01-intro-en.pdf">Introduction</a></li>
+<li>Apr 13: <a href="./slides/iscg-2018-02-modeling1-en.pdf">Modeling (1)</a> - <a href="./slides/iscg-2018-02-modeling1-en.mp4">mp4</a></li>
+<li>Apr 20: <a href="./slides/iscg-2018-03-modeling2-en.pdf">Modeling (2)</a> - <a href="./slides/iscg-2018-03-modeling2-en.mp4">mp4</a></li>
+<li>Apr 27: <a href="./slides/iscg-2018-04-modeling3-en.pdf">Modeling (3)</a> - <a href="./slides/iscg-2018-04-modeling3-en.mp4">mp4</a></li>
+<li>May 11: No class</li>
+<li>May 18: <a href="./slides/iscg-2018-05-animation1-en.pdf">Animation (1)</a></li>
+<li>May 25: <a href="./slides/iscg-2018-06-animation2-en.pdf">Animation (2)</a></li>
+<li>Jun  1: <a href="./slides/iscg-2018-07-animation3.pdf">Animation (3)</a></li>
+<li>Jun  8: <a href="./slides/iscg-2018-08-image1-en.pdf">Image Processing (1)</a></li>
+<li>Jun 15: <a href="./slides/iscg-2018-09-image2-en.pdf">Image Processing (2)</a></li>
+<li>Jun 22: No class</li>
+<li>Jun 29: <a href="./slides/iscg-2018-10-rendering1.pdf">Rendering (1)</a></li>
+<li>Jul  6: <a href="./slides/iscg-2018-11-rendering2.pdf">Rendering (2)</a></li>
+<li>Jul 13: <a href="./slides/iscg-2018-12-rendering3.pdf">Rendering (3)</a></li>
+</ul> -->
+
+<h2>課題</h2>
+<!-- <h2 class="en">Assignments</h2> -->
+
+<ul>
+<li><a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/">Mozilla Thimble上の課題ページ</a></li>
+<!-- <li class="en"><a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/">Assignments page on Mozilla Thimble</a></li> -->
+<li>ライブラリ</li>
+<!-- <li class="en">Libraries</li> -->
+<ul>
+    <li><a target="_blank" href="https://bitbucket.org/kenshi84/legacygl.js/overview">legacygl.js</a></li>
+    <li><a target="_blank" href="http://glmatrix.net/">glMatrix</a></li>
+    <li><a target="_blank" href="http://numericjs.com/">Numeric Javascript</a></li>
+</ul>
+<li>提出方法</li>
+<ul>
+    <li>WebGLで実装したものをWeb上にアップロードし、そのURLをTAにメールで送ること。Thimbleを使うのが簡単だが、自前サーバ等を使っても良い。</li>
+    <li>HTMLページ上に簡単な内容説明や考察等を含めること。</li>
+    <li>legacygl.js以外のWebGLライブラリを用いても良い。</li>
+    <li>C++等で実装しても良いが、一般的な環境でビルド・実行できるようにすること。上記と同様のレポートをソース・バイナリと合わせてzipファイルとして提出すること。</li>
+    <li>課題は大まかな形で出題するので、具体的に何をどう実装するかは各人の興味と力量に応じて決めること。実装内容のクオリティは成績評価に反映される。</li>
+    <li>不明な点があればすぐ相談すること。</li>
+</ul>
+<!-- <li class="en">Requirements</li>
+<ul class="en">
+    <li>Implement the solution using WebGL, upload it to the web, and send its URL to the TA via e-mail. Use of Mozilla Thimble is recommended, but other ways (e.g. your own server) are also allowed.</li>
+    <li>Include brief description/discussion/etc in the HTML page.</li>
+    <li>Other WebGL libraries than legacygl.js can also be used.</li>
+    <li>Implementation with other languages such as C++ is allowed, provided that it compiles and runs under typical computing environments. In this case, some written report as noted above should be included along with the source code and binary in a single ZIP file.</li>
+    <li>Assignments are described in less specific ways, so it is up to you to implement what features in which ways. The quality and creativity in the submitted implementations will be reflected in the final grade. </li>
+    <li>If anything is unclear, don't hesitate to contact the TA or the lecturers.</li>
+    <li>Deadline: The end of July</li>
+</ul> -->
+<li>基本課題</li>
+<ul>
+    <li><a href="./assignments/iscg-2018-assignment-1-spline.pdf">1: パラメトリック曲線</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-1-spline.html">サンプル</a> 【締切：5月10日】</li>
+     <li><a href="./assignments/iscg-2018-assignment-2-ik.pdf">2: インバースキネマティクス</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-2-ik.html">サンプル</a> 【締切：6月7日】</li>
+    <li><a href="./assignments/iscg-2018-assignment-4-ray-tracing.pdf">4: レイトレーシング</a> 【締切：6月28日】</li>
+    <li><a href="./assignments/iscg-2018-assignment-3-filter.pdf">3: 画像のフィルタリング</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-3-filter.html">サンプル</a> 【締切：7月末日】</li>
+</ul>
+<!-- <li class="en">Basic assignments</li>
+<ul class="en">
+    <li><a href="./assignments/iscg-2018-assignment-1-spline-en.pdf">1: Parametric Curves</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-1-spline.html">Sample</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-2-ik-en.pdf">2: Inverse Kinematics</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-2-ik.html">Sample</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-3-filter-en.pdf">3: Image Filtering</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-3-filter.html">Sample</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-4-ray-tracing.pdf">4: Ray Tracing</a></li>
+</ul> -->
+<li>発展課題 【締切：7月末日】</li>
+<ul>
+    <li><a href="./assignments/iscg-2018-assignment-a-subdivision.pdf">A: サブディビジョンサーフェス</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-a-subdivision.html">サンプル</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-b-implicit.pdf">B: 陰関数モデリング</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-c-pbd.pdf">C: Position-Based Dynamics</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-c-pbd.html">サンプル</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-e-fluid.pdf">E: 流体シミュレーション</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-e-fluid.html">サンプル</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-h-shading-models.pdf">H: シェーディングモデル</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-i-light-transport.pdf">I: 光伝搬シミュレーション</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-f-poisson.pdf">F: Poisson Image Editing</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-f-poisson.html">サンプル</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-g-patchmatch.pdf">G: テクスチャ合成</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-g-patchmatch.html">サンプル</a></li>
+</ul>
+<!-- <li class="en">Advanced assignments</li>
+<ul class="en">
+    <li><a href="./assignments/iscg-2018-assignment-a-subdivision-en.pdf">A: Subdivision Surfaces</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-a-subdivision.html">Sample</a>
+    <li><a href="./assignments/iscg-2018-assignment-b-implicit-en.pdf">B: Implicit Modeling</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-c-pbd-en.pdf">C: Position-Based Dynamics</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-c-pbd.html">Sample</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-e-fluid-en.pdf">E: Fluid Simulation</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-e-fluid.html">Sample</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-f-poisson-en.pdf">F: Poisson Image Editing</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-f-poisson.html">Sample</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-g-patchmatch-en.pdf">G: Texture Synthesis</a> - <a target="_blank" href="https://thimbleprojects.org/kenshi84/50110/assignments/assignment-g-patchmatch.html">Sample</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-h-shading-models.pdf">H: Shading Models</a></li>
+    <li><a href="./assignments/iscg-2018-assignment-i-light-transport.pdf">I: Light Transport</a></li>
+</ul> -->
+</ul>
+
+<footer id="footer"></footer>
+</html>

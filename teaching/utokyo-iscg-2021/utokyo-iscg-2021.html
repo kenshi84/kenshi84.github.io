@@ -1,0 +1,204 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../common.css" />
+    <script type="text/javascript" src="../../common.js"></script>
+    <title>2021年度 コンピュータグラフィクス論 / Introduction to Computer Graphics 2021</title>
+</head>
+<body onload="init()">
+<header id="header"></header>
+<h1 class="ja">2021年度 東京大学理学部 コンピュータグラフィクス論</h1>
+<ul class="ja">
+   <li>科目番号： 0510029</li>
+   <li>日時： 木曜2限 (10:25～12:10)</li>
+   <li class="emph">新型コロナウィルス感染拡大防止のため、本講義はオンラインにて実施する。オンライン会議のURLはシラバスを参照のこと。</li>
+   <li><a target="_blank" href="https://itc-lms.ecc.u-tokyo.ac.jp/lms/course?idnumber=202105100290F01">ITC-LMS上の講義ページ</a></li>
+</ul>
+<h1 class="en">Introduction to Computer Graphics 2021 (School of Science, Univ. Tokyo)</h1>
+<ul class="en">
+   <li>Course code: 0510029</li>
+   <li>Time： Thursdays, 10:25--12:10</li>
+   <li class="emph">Given the situation with COVID-19, this course will be given online. Please refer to the syllabus for the online meeting URL.</li>
+   <li><a target="_blank" href="https://itc-lms.ecc.u-tokyo.ac.jp/lms/course?idnumber=202105100290F01">Course page on ITC-LMS</a></li>
+</ul>
+
+<h2 class="ja">担当教員</h2>
+<ul class="ja">
+    <li><a target="_blank" href="http://research.nii.ac.jp/~takayama/">高山 健志</a></li>
+    <ul>
+        <li>国立情報学研究所 助教</li>
+        <li>Email: takayama [at] nii.ac.jp</li>
+    </ul>
+</ul>
+<h2 class="en">Lecturer</h2>
+<ul class="en">
+    <li><a target="_blank" href="http://research.nii.ac.jp/~takayama/">Kenshi Takayama</a></li>
+    <ul>
+        <li>Assistant Professor, National Institute of Informatics</li>
+        <li>Email: takayama [at] nii.ac.jp</li>
+    </ul>
+</ul>
+<h2>TA</h2>
+<ul class="ja">
+    <li>遠藤 輝貴</li>
+    <ul>
+        <li>五十嵐研 修士課程</li>
+        <li>Email: endo-k-88st0 [at] g.ecc.u-tokyo.ac.jp</li>
+    </ul>
+</ul>
+<ul class="en">
+    <li>Koki Endo</li>
+    <ul>
+        <li>MSc student, Igarashi Lab</li>
+        <li>Email: endo-k-88st0 [at] g.ecc.u-tokyo.ac.jp</li>
+    </ul>
+</ul>
+
+<h2 class="ja">参考情報</h2>
+<h2 class="en">References</h2>
+<ul>
+    <li class="ja">CG一般</li>
+    <li class="en">CG in general</li>
+    <ul>
+        <li class="ja">コンピュータグラフィックス　改訂新版 (CGーARTS協会, ISBN:9784903474496)</li>
+        <li class="ja">ディジタル画像処理　改訂新版 (CGーARTS協会, ISBN:9784903474502)</li>
+        <li class="ja">Computer Graphics Gems JP 2012 (ボーンデジタル, ISBN:9784862461858)</li>
+        <li class="ja">Computer Graphics Gems JP 2013/2014 (ボーンデジタル, ISBN:9784862462190)</li>
+        <li class="ja">Computer Graphics Gems JP 2015 (ボーンデジタル, ISBN:9784862462923)</li>
+        <li>Fundamentals of Computer Graphics (A K Peters/CRC Press, ISBN:9781568814698)</li>
+        <li>Computer Graphics: Principles and Practice (Addison-Wesley Professional, ISBN:9780321399526)</li>
+    </ul>
+    <li>OpenGL</li>
+    <ul>
+        <li class="ja"><a href="http://wisdom.sakura.ne.jp/system/opengl/">OpenGL入門</a></li>
+        <li class="ja"><a href="http://marina.sys.wakayama-u.ac.jp/~tokoi/oglarticles.html">和歌山大学 床井研究室</a></li>
+        <li><a href="http://www.opengl.org/sdk/docs/man/html/indexflat.php">Spec</a></li>
+    </ul>
+    <li>JavaScript/WebGL/HTML5</li>
+    <ul>
+        <li><a href="https://www.khronos.org/registry/webgl/specs/1.0/">WebGL spec</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">Mozilla Developer Network</a></li>
+        <li><a href="http://casual-effects.blogspot.jp/2014/01/">An Introduction to JavaScript for Sophisticated Programmers</a></li>
+        <li><a href="http://effectivejs.com/">Effective JavaScript</a> (Addison-Wesley Professional, ISBN:9780321812186)</li>
+    </ul>
+    <li>3D Repositories</li>
+    <ul>
+        <li><a href="https://www.turbosquid.com/">TurboSquid</a></li>
+        <li><a href="https://3dwarehouse.sketchup.com/">3D Warehouse</a></li>
+        <li><a href="https://graphics.stanford.edu/data/3Dscanrep/">The Stanford 3D Scanning Repository</a></li>
+        <li><a href="http://visionair.ge.imati.cnr.it/ontologies/shapes/">AIM@SHAPE</a></li>
+    </ul>
+</ul>
+
+<h2 class="ja">講義資料</h2>
+<h2 class="en">Slides</h2>
+
+<p class="ja"><span class="emph">無断再配布禁止</span></p>
+<p class="en"><span class="emph">Do not redistribute slides without permission.</span></p>
+
+<ul class="ja">
+<li>4月 8日: <a href="./slides/iscg-2021-intro.pdf">イントロダクション</a></li>
+<li>4月15日: <a href="./slides/iscg-2021-modeling1.pdf">モデリング (1)</a></li>
+<li>4月22日: <a href="./slides/iscg-2021-modeling2.pdf">モデリング (2)</a></li>
+<li>5月 6日: <a href="./slides/iscg-2021-modeling3.pdf">モデリング (3)</a></li>
+<li>5月13日: <a href="./slides/iscg-2021-animation1.pdf">アニメーション (1)</a></li>
+<li>5月20日: <a href="./slides/iscg-2021-animation2.pdf">アニメーション (2)</a></li>
+<li>5月27日: <a href="./slides/iscg-2021-animation3.pdf">アニメーション (3)</a></li>
+<li>6月 3日: <a href="./slides/iscg-2021-rendering1.pdf">レンダリング (1)</a></li>
+<li>6月10日: <a href="./slides/iscg-2021-rendering2.pdf">レンダリング (2)</a></li>
+<li>6月17日: 休講</li>
+<li>6月24日: <a href="./slides/iscg-2021-rendering3.pdf">レンダリング (3)</a></li>
+<li>7月 1日: <a href="./slides/iscg-2021-image1.pdf">画像処理 (1)</a></li>
+<li>7月 8日: <a href="./slides/iscg-2021-image2.pdf">画像処理 (2)</a></li>
+<li>7月15日: 休講</li>
+</ul>
+
+<ul class="en">
+<li>Apr  8: <a href="./slides/iscg-2021-intro-en.pdf">Introduction</a></li>
+<li>Apr 15: <a href="./slides/iscg-2021-modeling1-en.pdf">Modeling (1)</a></li>
+<li>Apr 22: <a href="./slides/iscg-2021-modeling2-en.pdf">Modeling (2)</a></li>
+<li>May  6: <a href="./slides/iscg-2021-modeling3-en.pdf">Modeling (3)</a></li>
+<li>May 13: <a href="./slides/iscg-2021-animation1-en.pdf">Animation (1)</a></li>
+<li>May 20: <a href="./slides/iscg-2021-animation2-en.pdf">Animation (2)</a></li>
+<li>May 27: <a href="./slides/iscg-2021-animation3.pdf">Animation (3)</a></li>
+<li>Jun  3: <a href="./slides/iscg-2021-rendering1.pdf">Rendering (1)</a></li>
+<li>Jun 10: <a href="./slides/iscg-2021-rendering2.pdf">Rendering (2)</a></li>
+<li>Jun 17: No class</li>
+<li>Jun 24: <a href="./slides/iscg-2021-rendering3.pdf">Rendering (3)</a></li>
+<li>Jul  1: <a href="./slides/iscg-2021-image1-en.pdf">Image processing (1)</a></li>
+<li>Jul  8: <a href="./slides/iscg-2021-image2-en.pdf">Image processing (2)</a></li>
+<li>Jul 15: No class</li>
+</ul>
+
+<h2 class="ja">課題</h2>
+<h2 class="en">Assignments</h2>
+
+<ul>
+<li class="ja">ライブラリ</li>
+<li class="en">Libraries</li>
+<ul>
+    <li>legacygl.js (<a target="_blank" href="https://bitbucket.org/kenshi84/legacygl.js">repository</a>, <a target="_blank" href="https://legacygl-js.glitch.me">website</a>)</li>
+    <li><a target="_blank" href="http://glmatrix.net/">glMatrix</a></li>
+</ul>
+<li class="ja">提出方法</li>
+<ul class="ja">
+    <li>WebGL で実装したものを Web 上にアップロードし、そのURLを ITC-LMS の成果物提出欄に記載すること。Glitchを使うのが簡単だが、自前サーバ等を使っても良い。</li>
+    <li>HTMLページ上に簡単な内容説明や考察等を含めること。</li>
+    <li>legacygl.js以外のWebGLライブラリを用いても良い。</li>
+    <li>C++等で実装しても良いが、一般的な環境でビルド・実行できるようにすること。上記と同様のレポートをソース・バイナリと合わせてzipファイルとし、Google Drive等にアップロードしてそのURLをLMSの成果物提出欄に記載すること。</li>
+    <li>課題は大まかな形で出題するので、具体的に何をどう実装するかは各人の興味と力量に応じて決めること。実装内容のクオリティは成績評価に反映される。</li>
+    <li>提出期限までは何度でも提出内容を変更可能（新しい方を採点の対象とする）。</li>
+    <li>不明な点があればすぐ相談すること。</li>
+
+</ul>
+<li class="en">Requirements</li>
+<ul class="en">
+    <li>Implement the solution using WebGL, upload it to the web, and enter its URL to the deliverables field in the ITC-LMS assigment submission form. Use of Glitch is recommended, but other ways (e.g. your own server) are also allowed.</li>
+    <li>Include brief description/discussion/etc in the HTML page.</li>
+    <li>Other WebGL libraries than legacygl.js can also be used.</li>
+    <li>Implementation in other languages such as C++ is allowed, provided that it compiles and runs under typical computing environments. In this case, some written report as noted above should be included along with the source code and binary in a single ZIP file. Upload the ZIP file and submit its URL via ITC-LMS.</li>
+    <li>Assignments are described in less specific ways, so it is up to you to implement what features in which ways. The quality and creativity in the submitted implementations will be reflected in the final grade. </li>
+    <li>You can update your program any number of times before the deadline. The latest one gets evaluated.</li>
+    <li>If anything is unclear, don't hesitate to contact the TA or the lecturers.</li>
+</ul>
+
+<li class="ja">基本課題</li>
+<ul class="ja">
+   <li><a href="./assignments/iscg-2021-assignment-m1-spline.pdf">M1: パラメトリック曲線</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-m1-spline.glitch.me/">サンプル</a> 【締切：4月29日】</li>
+   <li><a href="./assignments/iscg-2021-assignment-a1-ik.pdf">A1: インバースキネマティクス</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-a1-ik.glitch.me">サンプル</a> 【締切：5月27日】</li>
+   <li><a href="./assignments/iscg-2021-assignment-r1-ray-tracing.pdf">R1: レイトレーシング</a> 【締切：6月24日】</li>
+   <li><a href="./assignments/iscg-2021-assignment-i1-filter.pdf">I1: 画像のフィルタリング</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-i1-filter.glitch.me/">サンプル</a> 【締切：7月15日】</li>
+</ul>
+<li class="en">Basic assignments</li>
+<ul class="en">
+   <li><a href="./assignments/iscg-2021-assignment-m1-spline-en.pdf">M1: Parametric curves</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-m1-spline.glitch.me/">Sample</a> 【Deadline: April 29】</li>
+   <li><a href="./assignments/iscg-2021-assignment-a1-ik-en.pdf">A1: Inverse kinematics</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-a1-ik.glitch.me">Sample</a> 【Deadline: May 27】</li>
+   <li><a href="./assignments/iscg-2021-assignment-r1-ray-tracing.pdf">R1: Ray tracing</a> 【Deadline: June 24】</li>
+   <li><a href="./assignments/iscg-2021-assignment-i1-filter-en.pdf">I1: Image filtering</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-i1-filter.glitch.me/">Sample</a> 【Deadline: July 15】</li>
+</ul>
+<li class="ja">発展課題 【締切：7月末日】</li>
+<ul class="ja">
+   <li><a href="./assignments/iscg-2021-assignment-m2-subdivision.pdf">M2: サブディビジョンサーフェス</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-m2-subdivision.glitch.me/">サンプル</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-m3-implicit.pdf">M3: 陰関数モデリング</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-a2-deformable.pdf">A2: 物理ベース変形アニメーション</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-a2-deformable.glitch.me/">サンプル</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-a3-fluid.pdf">A3: 流体シミュレーション</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-a3-fluid.glitch.me">サンプル</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-r2-shading-models.pdf">R2: シェーディングモデル</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-r3-light-transport.pdf">R3: 光伝搬シミュレーション</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-i2-poisson.pdf">I2: Poisson Image Editing</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-i2-poisson.glitch.me/">サンプル</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-i3-patchmatch.pdf">I3: テクスチャ合成</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-i3-patchmatch.glitch.me/">サンプル</a></li>
+</ul>
+<li class="en">Advanced assignments 【Deadline: end of July】</li>
+<ul class="en">
+   <li><a href="./assignments/iscg-2021-assignment-m2-subdivision-en.pdf">M2: Subdivision Surfaces</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-m2-subdivision.glitch.me/">Sample</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-m3-implicit-en.pdf">M3: Implicit Modeling</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-a2-deformable-en.pdf">A2: Deformable simulation</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-a2-deformable.glitch.me/">Sample</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-a3-fluid-en.pdf">A3: Fluid Simulations</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-a3-fluid.glitch.me">Sample</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-r2-shading-models.pdf">R2: Shading Models</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-r3-light-transport.pdf">R3: Light Transport</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-i2-poisson-en.pdf">I2: Poisson Image Editing</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-i2-poisson.glitch.me/">Sample</a></li>
+   <li><a href="./assignments/iscg-2021-assignment-i3-patchmatch-en.pdf">I3: Texture Synthesis</a> - <a target="_blank" href="https://utokyo-iscg-2021-assigment-i3-patchmatch.glitch.me/">Sample</a></li>
+</ul>
+</ul>
+
+<footer id="footer"></footer>
+</html>
