@@ -2,3 +2,5 @@
 *.out
 *.dvi
 *.log
+*.synctex.gz
+*.DS_Store
