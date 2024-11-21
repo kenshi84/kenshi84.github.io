@@ -10,13 +10,12 @@
 <link rel="stylesheet" href="ltx-amsart.css" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="keywords" lang="en" content="cross-parameterization,  inter-surface mapping,  bijection,  texture transfer,  intrinsic triangulation,  compatible triangulation">
-<base href="./png/" target="_blank">
 </head>
 <body>
 <div class="ltx_page_main">
 <div class="ltx_page_content">
 <article class="ltx_document ltx_authors_1line ltx_leqno">
-<figure id="S0.F1" class="ltx_figure ltx_teaserfigure"><img src="x1.png" id="S0.F1.g1" class="ltx_graphics ltx_img_landscape" width="830" height="197" alt="Refer to caption">
+<figure id="S0.F1" class="ltx_figure ltx_teaserfigure"><img src="./img/x1.png" id="S0.F1.g1" class="ltx_graphics ltx_img_landscape" width="830" height="197" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 1. </span>
 Given two triangle meshes <math id="S0.F1.m7" class="ltx_Math" alttext="\mathtt{A}" display="inline"><mi>𝙰</mi></math> and <math id="S0.F1.m8" class="ltx_Math" alttext="\mathtt{B}" display="inline"><mi>𝙱</mi></math>, we find a continuous, bijective and low-distortion map between them (their edge images shown in (a)).
 Internally, we build a Compatible Intrinsic Triangulation (CIT), a pair of intrinsic triangulations on both models sharing the same connectivity; every vertex of <math id="S0.F1.m9" class="ltx_Math" alttext="\mathtt{A}" display="inline"><mi>𝙰</mi></math> is inserted to <math id="S0.F1.m10" class="ltx_Math" alttext="\mathtt{B}" display="inline"><mi>𝙱</mi></math>’s intrinsic mesh, and vice versa (b).
@@ -184,7 +183,7 @@ Our work widens the application domains of intrinsic triangulations to the probl
 <p class="ltx_p">Our algorithm for constructing CITs is mainly about deciding which edges to flip based on the configuration of nearby vertices in a local 2D coordinate system, and thus is quite related to the existing literature on compatible triangulations in the context of 2D animation <cite class="ltx_cite ltx_citemacro_citep">(Alexa<span class="ltx_text ltx_bib_etal"> et al.</span>, <a href="#bib.bib41" title="As-rigid-as-possible shape interpolation" class="ltx_ref">2000</a>; Surazhsky and Gotsman, <a href="#bib.bib44" title="High quality compatible triangulations" class="ltx_ref">2004</a>; Baxter III<span class="ltx_text ltx_bib_etal"> et al.</span>, <a href="#bib.bib42" title="Compatible embedding for 2d shape animation" class="ltx_ref">2009</a>; Liu<span class="ltx_text ltx_bib_etal"> et al.</span>, <a href="#bib.bib43" title="High-quality compatible triangulations and their application in interactive animation" class="ltx_ref">2018</a>)</cite>.
 Revisiting these algorithms in our context may lead to substantial improvement of our algorithm, which is left for future work.</p>
 </div>
-<figure id="S2.F2" class="ltx_figure"><img src="x2.png" id="S2.F2.g1" class="ltx_graphics ltx_img_landscape" width="831" height="202" alt="Refer to caption">
+<figure id="S2.F2" class="ltx_figure"><img src="./img/x2.png" id="S2.F2.g1" class="ltx_graphics ltx_img_landscape" width="831" height="202" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 2. </span>
 The vertex insertion step (left) followed by the intrinsic Delaunay flipping step (right).
 Each vertex in correspondence is drawn in its unique color, and each original (i.e., non-inserted) vertex is drawn with a black silhouette.
@@ -256,7 +255,7 @@ As such, we clamp the smallest value below a threshold to zero and increase the 
 <div id="S4.SS1.p5" class="ltx_para">
 <p class="ltx_p">We perform the same vertex insertion process in the opposite direction (<math id="S4.SS1.p5.m1" class="ltx_Math" alttext="\mathtt{B}\rightarrow\mathtt{A}" display="inline"><mrow><mi>𝙱</mi><mo stretchy="false">→</mo><mi>𝙰</mi></mrow></math>) as well.</p>
 </div>
-<figure id="S4.F3" class="ltx_figure"><img src="x3.png" id="S4.F3.g1" class="ltx_graphics ltx_img_landscape" width="830" height="102" alt="Refer to caption">
+<figure id="S4.F3" class="ltx_figure"><img src="./img/x3.png" id="S4.F3.g1" class="ltx_graphics ltx_img_landscape" width="830" height="102" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 3. </span>
 Five subroutines constituting our <span class="ltx_text ltx_font_smallcaps">FlipToCompatible</span> algorithm.
 </figcaption>
@@ -369,13 +368,13 @@ Our algorithm tries to triangulate these two polygons in a compatible way.
 We use a simple heuristic to achieve this: for each vertex, we check if it is “visible” from each of all the other vertices of the polygon (i.e., the line segment between them is contained within the polygon) for both <math id="S4.SS5.SSSx4.p1.m3" class="ltx_Math" alttext="\mathtt{A}" display="inline"><mi>𝙰</mi></math> and <math id="S4.SS5.SSSx4.p1.m4" class="ltx_Math" alttext="\mathtt{B}" display="inline"><mi>𝙱</mi></math>.
 If such a vertex is found, we connect all the other vertices to that found vertex by repeatedly flipping edges.</p>
 </div>
-<figure id="S4.F4" class="ltx_figure"><img src="x4.png" id="S4.F4.g1" class="ltx_graphics ltx_img_landscape" width="830" height="104" alt="Refer to caption">
+<figure id="S4.F4" class="ltx_figure"><img src="./img/x4.png" id="S4.F4.g1" class="ltx_graphics ltx_img_landscape" width="830" height="104" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 4. </span>
 An example where <span class="ltx_text ltx_font_smallcaps">FlipToCompatible</span> is stuck (leftmost) but flipping one compatible edge pair within an incompatible patch (its boundary edges shown in red) leads to a different configuration (middle left) which can be handled by <span class="ltx_text ltx_font_smallcaps">FlipToCompatible</span>.
 The number above each arrow refers to the used subroutine of <span class="ltx_text ltx_font_smallcaps">FlipToCompatible</span>, while the number of incompatible edges in the patch is shown at the bottom of each figure.
 </figcaption>
 </figure>
-<figure id="S4.F5" class="ltx_figure"><img src="x5.png" id="S4.F5.g1" class="ltx_graphics ltx_img_landscape" width="830" height="96" alt="Refer to caption">
+<figure id="S4.F5" class="ltx_figure"><img src="./img/x5.png" id="S4.F5.g1" class="ltx_graphics ltx_img_landscape" width="830" height="96" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 5. </span>
 Five patterns for merging inconsistently positioned vertices.
 Original and inserted vertices are drawn with thick and thin black silhouettes, respectively.
@@ -458,7 +457,7 @@ See Appendix <a href="#A1" title="Appendix A Algorithms for merging inconsistent
 <h4 class="ltx_title ltx_title_subsubsection">
 <span class="ltx_tag ltx_tag_subsubsection">4.6.3. </span>Deforming patch boundary</h4>
 
-<figure id="S4.F6" class="ltx_figure"><img src="x6.png" id="S4.F6.g1" class="ltx_graphics ltx_img_landscape" width="830" height="190" alt="Refer to caption">
+<figure id="S4.F6" class="ltx_figure"><img src="./img/x6.png" id="S4.F6.g1" class="ltx_graphics ltx_img_landscape" width="830" height="190" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 6. </span>
 An example where our vertex merging algorithm cannot merge the purple and brown vertices due to the presence of the pink vertex on <math id="S4.F6.m3" class="ltx_Math" alttext="\mathtt{B}" display="inline"><mi>𝙱</mi></math> (as highlighted by the blue arrow), since the line segment between the green and purple vertices crosses the cyan and orange edges adjacent to the pink vertex.
 In such a case, we move the purple vertex on <math id="S4.F6.m4" class="ltx_Math" alttext="\mathtt{A}" display="inline"><mi>𝙰</mi></math> outwards a bit (as highlighted by the yellow arrow) to make the boundary shape of this incompatible patch convex, making its incompatible edge flippable (as highlighted by the red arrow).
@@ -476,7 +475,7 @@ We run <span class="ltx_text ltx_font_smallcaps">FlipToCompatible</span> again i
 <h3 class="ltx_title ltx_title_subsection">
 <span class="ltx_tag ltx_tag_subsection">4.7. </span>Splitting merged vertices</h3>
 
-<figure id="S4.F7" class="ltx_figure"><img src="x7.png" id="S4.F7.g1" class="ltx_graphics ltx_img_landscape" width="831" height="190" alt="Refer to caption">
+<figure id="S4.F7" class="ltx_figure"><img src="./img/x7.png" id="S4.F7.g1" class="ltx_graphics ltx_img_landscape" width="831" height="190" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 7. </span>
 The split of a merged vertex.
 The pair of edges to be split is indicated by the red arrows, while the displacement vectors for the newly created vertex are indicated by the yellow arrows.
@@ -495,13 +494,13 @@ Note that the displacements on <math id="S4.SS7.p1.m4" class="ltx_Math" alttext=
 <h3 class="ltx_title ltx_title_subsection">
 <span class="ltx_tag ltx_tag_subsection">4.8. </span>Optimizing connectivity</h3>
 
-<figure id="S4.F8" class="ltx_figure"><img src="x8.png" id="S4.F8.g1" class="ltx_graphics ltx_img_landscape" width="830" height="269" alt="Refer to caption">
+<figure id="S4.F8" class="ltx_figure"><img src="./img/x8.png" id="S4.F8.g1" class="ltx_graphics ltx_img_landscape" width="830" height="269" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 8. </span>
 An example where flipping edges to minimize the distortion energy can give rise to almost degenerate faces.
 A number inside or next to each triangle denotes its area.
 </figcaption>
 </figure>
-<figure id="S4.F9" class="ltx_figure"><img src="x9.png" id="S4.F9.g1" class="ltx_graphics ltx_img_landscape" width="831" height="241" alt="Refer to caption">
+<figure id="S4.F9" class="ltx_figure"><img src="./img/x9.png" id="S4.F9.g1" class="ltx_graphics ltx_img_landscape" width="831" height="241" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 9. </span>
 The generation of images of <math id="S4.F9.m14" class="ltx_Math" alttext="\mathtt{A}" display="inline"><mi>𝙰</mi></math>’s original edges on <math id="S4.F9.m15" class="ltx_Math" alttext="\mathtt{B}" display="inline"><mi>𝙱</mi></math>’s input mesh.
 We first detect all the intersections of <math id="S4.F9.m16" class="ltx_Math" alttext="\mathtt{A}" display="inline"><mi>𝙰</mi></math>’s intrinsic edges against <math id="S4.F9.m17" class="ltx_Math" alttext="\mathtt{A}" display="inline"><mi>𝙰</mi></math>’s original edges, depicted as red crosses (a).
@@ -546,13 +545,13 @@ Intersections of this piecewise-geodesic path and <math id="S5.SS1.p1.m21" class
 <p class="ltx_p">We run the same process in the opposite direction to obtain images of <math id="S5.SS1.p2.m1" class="ltx_Math" alttext="\mathtt{B}" display="inline"><mi>𝙱</mi></math>’s original edges on <math id="S5.SS1.p2.m2" class="ltx_Math" alttext="M_{\mathtt{A}}" display="inline"><msub><mi>M</mi><mi>𝙰</mi></msub></math>.
 Note that this second run generates the same set of intersections between <math id="S5.SS1.p2.m3" class="ltx_Math" alttext="E_{\mathtt{A}}" display="inline"><msub><mi>E</mi><mi>𝙰</mi></msub></math> and <math id="S5.SS1.p2.m4" class="ltx_Math" alttext="E_{\mathtt{B}}" display="inline"><msub><mi>E</mi><mi>𝙱</mi></msub></math> up to small numerical errors.</p>
 </div>
-<figure id="S5.F10" class="ltx_figure"><img src="x10.png" id="S5.F10.g1" class="ltx_graphics ltx_img_landscape" width="830" height="309" alt="Refer to caption">
+<figure id="S5.F10" class="ltx_figure"><img src="./img/x10.png" id="S5.F10.g1" class="ltx_graphics ltx_img_landscape" width="830" height="309" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 10. </span>
 (Left) Each intrinsic face can be intersected by any number of edges of <math id="S5.F10.m3" class="ltx_Math" alttext="\mathtt{A}" display="inline"><mi>𝙰</mi></math> and <math id="S5.F10.m4" class="ltx_Math" alttext="\mathtt{B}" display="inline"><mi>𝙱</mi></math>, resulting in overlay polygons.
 (Right) We enumerate each overlay polygon by using a data structure called <em class="ltx_emph ltx_font_italic">overlay wedge</em> associated with each corner of the overlay polygon.
 </figcaption>
 </figure>
-<figure id="S5.F11" class="ltx_figure"><img src="x11.png" id="S5.F11.g1" class="ltx_graphics ltx_img_landscape" width="831" height="196" alt="Refer to caption">
+<figure id="S5.F11" class="ltx_figure"><img src="./img/x11.png" id="S5.F11.g1" class="ltx_graphics ltx_img_landscape" width="831" height="196" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 11. </span>
 Overlay wedges generated per overlay vertex (depicted as a black circle at the center in each figure).
 (a) For an overlay vertex due to the intersection of two edges, we generate four overlay wedges.
@@ -634,7 +633,7 @@ This allows us to transfer a texture image from one model to the other while pre
 <h2 class="ltx_title ltx_title_section">
 <span class="ltx_tag ltx_tag_section">6. </span>Optimization</h2>
 
-<figure id="S6.F12" class="ltx_figure"><img src="x12.png" id="S6.F12.g1" class="ltx_graphics ltx_img_landscape" width="831" height="273" alt="Refer to caption">
+<figure id="S6.F12" class="ltx_figure"><img src="./img/x12.png" id="S6.F12.g1" class="ltx_graphics ltx_img_landscape" width="831" height="273" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 12. </span>
 
 Flattening of <math id="S6.F12.m6" class="ltx_Math" alttext="\mathbf{f}_{\mathtt{A}}" display="inline"><msub><mi>𝐟</mi><mi>𝙰</mi></msub></math>’s support patch (left) and <math id="S6.F12.m7" class="ltx_Math" alttext="\mathbf{f}_{\mathtt{B}}" display="inline"><msub><mi>𝐟</mi><mi>𝙱</mi></msub></math>’s support patch (right) for the computation of the energy derivative.
@@ -798,7 +797,7 @@ Even though our CIT generation algorithm often succeeds with such a vertex image
 To avoid this, we add a few more landmarks near the tip of the part so that the vertex distribution becomes more even (Fig. <a href="#S7.F13" title="Figure 13 ‣ 7.1. Initial map generation ‣ 7. Results ‣ Compatible Intrinsic Triangulations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">13</span></a>d).
 See the supplemental material for our choices of landmarks.</p>
 </div>
-<figure id="S7.F13" class="ltx_figure"><img src="x13.png" id="S7.F13.g1" class="ltx_graphics ltx_img_landscape" width="399" height="160" alt="Refer to caption">
+<figure id="S7.F13" class="ltx_figure"><img src="./img/x13.png" id="S7.F13.g1" class="ltx_graphics ltx_img_landscape" width="399" height="160" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 13. </span>
 
 Tips on placing landmarks.
@@ -823,7 +822,7 @@ As shown in Table <a href="#S7.T1" title="Table 1 ‣ 7.2. Comparison to Schmidt
 We believe the lower values of our energy are due to the fact that Schmidt et al. terminated optimization after a fixed number of steps, whereas we let the optimizer run until it can make no more progress.
 The two unsuccessful cases are of extremely non-isometric shape pairs, and our algorithm quickly gets trapped by local minima.</p>
 </div>
-<figure id="S7.F14" class="ltx_figure"><img src="x14.png" id="S7.F14.g1" class="ltx_graphics ltx_img_landscape" width="831" height="173" alt="Refer to caption">
+<figure id="S7.F14" class="ltx_figure"><img src="./img/x14.png" id="S7.F14.g1" class="ltx_graphics ltx_img_landscape" width="831" height="173" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 14. </span>
 Optimization results on the dataset of <cite class="ltx_cite ltx_citemacro_citep">(Schmidt<span class="ltx_text ltx_bib_etal"> et al.</span>, <a href="#bib.bib2" title="Inter-surface maps via constant-curvature metrics" class="ltx_ref">2020</a>)</cite>.
 </figcaption>
@@ -954,12 +953,12 @@ Out of the remaining 88 cases, we had 7 cases (62-72, 128-136, 129-126, 130-134,
 For the two cases 62-72 and 386-397, the shapes are widely different near the tail region, while for the two cases 152-149 and 220-201, the overall shapes are very different.
 For the three cases 128-136, 129-126 and 130-134, the very thin and long tentacles of the octopuses are arranged in some inconsistent manner.</p>
 </div>
-<figure id="S7.F15" class="ltx_figure"><img src="x15.png" id="S7.F15.g1" class="ltx_graphics ltx_img_landscape" width="831" height="427" alt="Refer to caption">
+<figure id="S7.F15" class="ltx_figure"><img src="./img/x15.png" id="S7.F15.g1" class="ltx_graphics ltx_img_landscape" width="831" height="427" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 15. </span>
 Sample optimized maps from our experiment on the Princeton Segmentation Dataset.
 </figcaption>
 </figure>
-<figure id="S7.F16" class="ltx_figure"><img src="x16.png" id="S7.F16.g1" class="ltx_graphics ltx_img_landscape" width="415" height="104" alt="Refer to caption">
+<figure id="S7.F16" class="ltx_figure"><img src="./img/x16.png" id="S7.F16.g1" class="ltx_graphics ltx_img_landscape" width="415" height="104" alt="Refer to caption">
 <figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_figure">Figure 16. </span>
 7 cases where our CIT generation algorithm failed..
 </figcaption>
