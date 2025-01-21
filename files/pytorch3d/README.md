@@ -40,3 +40,4 @@ Mirroring from https://github.com/facebookresearch/pytorch3d/issues/1401:
 - https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py310_cu121_pyt231/pytorch3d-0.7.8-cp310-cp310-linux_x86_64.whl
 - https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py310_cu121_pyt240/pytorch3d-0.7.8-cp310-cp310-linux_x86_64.whl
 - https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py310_cu121_pyt241/pytorch3d-0.7.8-cp310-cp310-linux_x86_64.whl
+- https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py310_cu121_pyt251/pytorch3d-0.7.8-cp310-cp310-linux_x86_64.whl
